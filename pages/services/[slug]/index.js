@@ -8,7 +8,7 @@ import parse from 'html-react-parser';
 export async function getServerSideProps({ params }) {
     const { slug } = params;
   
-    const res = await fetch(`http://localhost:3000/api/services/${slug}`);
+    const res = await fetch(`/api/services/${slug}`);
     if (!res.ok) {
         return {
           notFound: true,
