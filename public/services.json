@@ -1,0 +1,226 @@
+[
+    {
+        "id":1,
+        "page_title":"Planing",
+        "slug":"planing",
+        "featured_image": "/images/services/planing.jpg",
+        "title":"We offer the best planning service",
+        "subtitle":"About Planning Service in Yellow Wood Design & Constructions",
+        "service_description":"<p> Planning architecture involves designing and organizing spaces to meet specific needs, whether it's for residential, commercial, or public purposes. It encompasses understanding client requirements, considering site constraints, adhering to building codes and regulations, and creating aesthetically pleasing and functional designs. From conceptual sketches to detailed blueprints, architects blend creativity with technical expertise to bring structures to life. They also often collaborate with engineers, contractors, and other professionals to ensure projects are executed smoothly and successfully. Architecture isn't just about creating buildings; it's about shaping environments and improving the way people interact with their surroundings.</p> <p>Architects work closely with clients to understand their needs, goals, and budget for the project. This stage involves gathering information about spatial requirements, functional needs, and any specific preferences or constraints.</p><p>Before designing a building, architects thoroughly analyze the site where it will be located. Factors such as topography, climate, vegetation, neighboring structures, and legal restrictions all influence the design process.</p><p>This is where creativity flourishes. Architects develop initial design concepts that address the client's requirements while considering the site context. Sketches, diagrams, and 3D models are often used to communicate these ideas.</p>",
+        "faqs":[
+            {
+               "ques":"1 - What is the role of an architect in planning architecture?",
+               "ans":" Architects design and organize spaces, ensuring they meet client needs, adhere to regulations, and blend creativity with functionality."
+            },
+            {
+                "ques":"2 - How long does it typically take to complete the architectural planning process for a building?",
+                "ans":"The timeline varies depending on the project's complexity and scope, but it can range from several months to several years from initial concept to completion."
+             },
+             {
+                "ques":"3 - What software do architects use for planning architecture?",
+                "ans":"Architects commonly use software such as AutoCAD, Revit, SketchUp, and Adobe Creative Suite for drafting, modeling, and visualization during the architectural planning process."
+             },
+             {
+                "ques":"4 - How do architects ensure their designs are environmentally friendly?",
+                "ans":"Architects incorporate sustainable design principles such as energy efficiency, use of renewable materials, and consideration of site orientation and natural ventilation to minimize environmental impact in their designs."
+             }
+             
+        ]
+    },
+    {
+        "id":2,
+        "page_title":"2D Design",
+        "slug":"2d-design",
+        "featured_image": "/images/services/planing.jpg",
+        "title":"We offer the best planning service",
+        "subtitle":"About Planning Service in Yellow Wood Design & Constructions",
+        "service_description":"<p> Planning architecture involves designing and organizing spaces to meet specific needs, whether it's for residential, commercial, or public purposes. It encompasses understanding client requirements, considering site constraints, adhering to building codes and regulations, and creating aesthetically pleasing and functional designs. From conceptual sketches to detailed blueprints, architects blend creativity with technical expertise to bring structures to life. They also often collaborate with engineers, contractors, and other professionals to ensure projects are executed smoothly and successfully. Architecture isn't just about creating buildings; it's about shaping environments and improving the way people interact with their surroundings.</p> <p>Architects work closely with clients to understand their needs, goals, and budget for the project. This stage involves gathering information about spatial requirements, functional needs, and any specific preferences or constraints.</p><p>Before designing a building, architects thoroughly analyze the site where it will be located. Factors such as topography, climate, vegetation, neighboring structures, and legal restrictions all influence the design process.</p><p>This is where creativity flourishes. Architects develop initial design concepts that address the client's requirements while considering the site context. Sketches, diagrams, and 3D models are often used to communicate these ideas.</p>",
+        "faqs":[
+            {
+               "ques":"1 - What is the role of an architect in planning architecture?",
+               "ans":" Architects design and organize spaces, ensuring they meet client needs, adhere to regulations, and blend creativity with functionality."
+            },
+            {
+                "ques":"2 - How long does it typically take to complete the architectural planning process for a building?",
+                "ans":"The timeline varies depending on the project's complexity and scope, but it can range from several months to several years from initial concept to completion."
+             },
+             {
+                "ques":"3 - What software do architects use for planning architecture?",
+                "ans":"Architects commonly use software such as AutoCAD, Revit, SketchUp, and Adobe Creative Suite for drafting, modeling, and visualization during the architectural planning process."
+             },
+             {
+                "ques":"4 - How do architects ensure their designs are environmentally friendly?",
+                "ans":"Architects incorporate sustainable design principles such as energy efficiency, use of renewable materials, and consideration of site orientation and natural ventilation to minimize environmental impact in their designs."
+             }
+             
+        ]
+    },
+    {
+        "id":3,
+        "page_title":"3D Elevation",
+        "slug":"3d-elevation",
+        "featured_image": "/images/services/planing.jpg",
+        "title":"We offer the best planning service",
+        "subtitle":"About Planning Service in Yellow Wood Design & Constructions",
+        "service_description":"<p> Planning architecture involves designing and organizing spaces to meet specific needs, whether it's for residential, commercial, or public purposes. It encompasses understanding client requirements, considering site constraints, adhering to building codes and regulations, and creating aesthetically pleasing and functional designs. From conceptual sketches to detailed blueprints, architects blend creativity with technical expertise to bring structures to life. They also often collaborate with engineers, contractors, and other professionals to ensure projects are executed smoothly and successfully. Architecture isn't just about creating buildings; it's about shaping environments and improving the way people interact with their surroundings.</p> <p>Architects work closely with clients to understand their needs, goals, and budget for the project. This stage involves gathering information about spatial requirements, functional needs, and any specific preferences or constraints.</p><p>Before designing a building, architects thoroughly analyze the site where it will be located. Factors such as topography, climate, vegetation, neighboring structures, and legal restrictions all influence the design process.</p><p>This is where creativity flourishes. Architects develop initial design concepts that address the client's requirements while considering the site context. Sketches, diagrams, and 3D models are often used to communicate these ideas.</p>",
+        "faqs":[
+            {
+               "ques":"1 - What is the role of an architect in planning architecture?",
+               "ans":" Architects design and organize spaces, ensuring they meet client needs, adhere to regulations, and blend creativity with functionality."
+            },
+            {
+                "ques":"2 - How long does it typically take to complete the architectural planning process for a building?",
+                "ans":"The timeline varies depending on the project's complexity and scope, but it can range from several months to several years from initial concept to completion."
+             },
+             {
+                "ques":"3 - What software do architects use for planning architecture?",
+                "ans":"Architects commonly use software such as AutoCAD, Revit, SketchUp, and Adobe Creative Suite for drafting, modeling, and visualization during the architectural planning process."
+             },
+             {
+                "ques":"4 - How do architects ensure their designs are environmentally friendly?",
+                "ans":"Architects incorporate sustainable design principles such as energy efficiency, use of renewable materials, and consideration of site orientation and natural ventilation to minimize environmental impact in their designs."
+             }
+             
+        ]
+    },
+    {
+        "id":4,
+        "page_title":"Interior Designing",
+        "slug":"interior-designing",
+        "featured_image": "/images/services/planing.jpg",
+        "title":"We offer the best planning service",
+        "subtitle":"About Planning Service in Yellow Wood Design & Constructions",
+        "service_description":"<p> Planning architecture involves designing and organizing spaces to meet specific needs, whether it's for residential, commercial, or public purposes. It encompasses understanding client requirements, considering site constraints, adhering to building codes and regulations, and creating aesthetically pleasing and functional designs. From conceptual sketches to detailed blueprints, architects blend creativity with technical expertise to bring structures to life. They also often collaborate with engineers, contractors, and other professionals to ensure projects are executed smoothly and successfully. Architecture isn't just about creating buildings; it's about shaping environments and improving the way people interact with their surroundings.</p> <p>Architects work closely with clients to understand their needs, goals, and budget for the project. This stage involves gathering information about spatial requirements, functional needs, and any specific preferences or constraints.</p><p>Before designing a building, architects thoroughly analyze the site where it will be located. Factors such as topography, climate, vegetation, neighboring structures, and legal restrictions all influence the design process.</p><p>This is where creativity flourishes. Architects develop initial design concepts that address the client's requirements while considering the site context. Sketches, diagrams, and 3D models are often used to communicate these ideas.</p>",
+        "faqs":[
+            {
+               "ques":"1 - What is the role of an architect in planning architecture?",
+               "ans":" Architects design and organize spaces, ensuring they meet client needs, adhere to regulations, and blend creativity with functionality."
+            },
+            {
+                "ques":"2 - How long does it typically take to complete the architectural planning process for a building?",
+                "ans":"The timeline varies depending on the project's complexity and scope, but it can range from several months to several years from initial concept to completion."
+             },
+             {
+                "ques":"3 - What software do architects use for planning architecture?",
+                "ans":"Architects commonly use software such as AutoCAD, Revit, SketchUp, and Adobe Creative Suite for drafting, modeling, and visualization during the architectural planning process."
+             },
+             {
+                "ques":"4 - How do architects ensure their designs are environmentally friendly?",
+                "ans":"Architects incorporate sustainable design principles such as energy efficiency, use of renewable materials, and consideration of site orientation and natural ventilation to minimize environmental impact in their designs."
+             }
+             
+        ]
+    },
+    {
+        "id":5,
+        "page_title":"Vaastu Consultation",
+        "slug":"vaastu-consultation",
+        "featured_image": "/images/services/planing.jpg",
+        "title":"We offer the best planning service",
+        "subtitle":"About Planning Service in Yellow Wood Design & Constructions",
+        "service_description":"<p> Planning architecture involves designing and organizing spaces to meet specific needs, whether it's for residential, commercial, or public purposes. It encompasses understanding client requirements, considering site constraints, adhering to building codes and regulations, and creating aesthetically pleasing and functional designs. From conceptual sketches to detailed blueprints, architects blend creativity with technical expertise to bring structures to life. They also often collaborate with engineers, contractors, and other professionals to ensure projects are executed smoothly and successfully. Architecture isn't just about creating buildings; it's about shaping environments and improving the way people interact with their surroundings.</p> <p>Architects work closely with clients to understand their needs, goals, and budget for the project. This stage involves gathering information about spatial requirements, functional needs, and any specific preferences or constraints.</p><p>Before designing a building, architects thoroughly analyze the site where it will be located. Factors such as topography, climate, vegetation, neighboring structures, and legal restrictions all influence the design process.</p><p>This is where creativity flourishes. Architects develop initial design concepts that address the client's requirements while considering the site context. Sketches, diagrams, and 3D models are often used to communicate these ideas.</p>",
+        "faqs":[
+            {
+               "ques":"1 - What is the role of an architect in planning architecture?",
+               "ans":" Architects design and organize spaces, ensuring they meet client needs, adhere to regulations, and blend creativity with functionality."
+            },
+            {
+                "ques":"2 - How long does it typically take to complete the architectural planning process for a building?",
+                "ans":"The timeline varies depending on the project's complexity and scope, but it can range from several months to several years from initial concept to completion."
+             },
+             {
+                "ques":"3 - What software do architects use for planning architecture?",
+                "ans":"Architects commonly use software such as AutoCAD, Revit, SketchUp, and Adobe Creative Suite for drafting, modeling, and visualization during the architectural planning process."
+             },
+             {
+                "ques":"4 - How do architects ensure their designs are environmentally friendly?",
+                "ans":"Architects incorporate sustainable design principles such as energy efficiency, use of renewable materials, and consideration of site orientation and natural ventilation to minimize environmental impact in their designs."
+             }
+             
+        ]
+    },
+    {
+        "id":6,
+        "page_title":"Structural Designing",
+        "slug":"structural-designing",
+        "featured_image": "/images/services/planing.jpg",
+        "title":"We offer the best planning service",
+        "subtitle":"About Planning Service in Yellow Wood Design & Constructions",
+        "service_description":"<p> Planning architecture involves designing and organizing spaces to meet specific needs, whether it's for residential, commercial, or public purposes. It encompasses understanding client requirements, considering site constraints, adhering to building codes and regulations, and creating aesthetically pleasing and functional designs. From conceptual sketches to detailed blueprints, architects blend creativity with technical expertise to bring structures to life. They also often collaborate with engineers, contractors, and other professionals to ensure projects are executed smoothly and successfully. Architecture isn't just about creating buildings; it's about shaping environments and improving the way people interact with their surroundings.</p> <p>Architects work closely with clients to understand their needs, goals, and budget for the project. This stage involves gathering information about spatial requirements, functional needs, and any specific preferences or constraints.</p><p>Before designing a building, architects thoroughly analyze the site where it will be located. Factors such as topography, climate, vegetation, neighboring structures, and legal restrictions all influence the design process.</p><p>This is where creativity flourishes. Architects develop initial design concepts that address the client's requirements while considering the site context. Sketches, diagrams, and 3D models are often used to communicate these ideas.</p>",
+        "faqs":[
+            {
+               "ques":"1 - What is the role of an architect in planning architecture?",
+               "ans":" Architects design and organize spaces, ensuring they meet client needs, adhere to regulations, and blend creativity with functionality."
+            },
+            {
+                "ques":"2 - How long does it typically take to complete the architectural planning process for a building?",
+                "ans":"The timeline varies depending on the project's complexity and scope, but it can range from several months to several years from initial concept to completion."
+             },
+             {
+                "ques":"3 - What software do architects use for planning architecture?",
+                "ans":"Architects commonly use software such as AutoCAD, Revit, SketchUp, and Adobe Creative Suite for drafting, modeling, and visualization during the architectural planning process."
+             },
+             {
+                "ques":"4 - How do architects ensure their designs are environmentally friendly?",
+                "ans":"Architects incorporate sustainable design principles such as energy efficiency, use of renewable materials, and consideration of site orientation and natural ventilation to minimize environmental impact in their designs."
+             }
+             
+        ]
+    },
+    {
+        "id":7,
+        "page_title":"Waterproofing",
+        "slug":"waterproofing",
+        "featured_image": "/images/services/planing.jpg",
+        "title":"We offer the best planning service",
+        "subtitle":"About Planning Service in Yellow Wood Design & Constructions",
+        "service_description":"<p> Planning architecture involves designing and organizing spaces to meet specific needs, whether it's for residential, commercial, or public purposes. It encompasses understanding client requirements, considering site constraints, adhering to building codes and regulations, and creating aesthetically pleasing and functional designs. From conceptual sketches to detailed blueprints, architects blend creativity with technical expertise to bring structures to life. They also often collaborate with engineers, contractors, and other professionals to ensure projects are executed smoothly and successfully. Architecture isn't just about creating buildings; it's about shaping environments and improving the way people interact with their surroundings.</p> <p>Architects work closely with clients to understand their needs, goals, and budget for the project. This stage involves gathering information about spatial requirements, functional needs, and any specific preferences or constraints.</p><p>Before designing a building, architects thoroughly analyze the site where it will be located. Factors such as topography, climate, vegetation, neighboring structures, and legal restrictions all influence the design process.</p><p>This is where creativity flourishes. Architects develop initial design concepts that address the client's requirements while considering the site context. Sketches, diagrams, and 3D models are often used to communicate these ideas.</p>",
+        "faqs":[
+            {
+               "ques":"1 - What is the role of an architect in planning architecture?",
+               "ans":" Architects design and organize spaces, ensuring they meet client needs, adhere to regulations, and blend creativity with functionality."
+            },
+            {
+                "ques":"2 - How long does it typically take to complete the architectural planning process for a building?",
+                "ans":"The timeline varies depending on the project's complexity and scope, but it can range from several months to several years from initial concept to completion."
+             },
+             {
+                "ques":"3 - What software do architects use for planning architecture?",
+                "ans":"Architects commonly use software such as AutoCAD, Revit, SketchUp, and Adobe Creative Suite for drafting, modeling, and visualization during the architectural planning process."
+             },
+             {
+                "ques":"4 - How do architects ensure their designs are environmentally friendly?",
+                "ans":"Architects incorporate sustainable design principles such as energy efficiency, use of renewable materials, and consideration of site orientation and natural ventilation to minimize environmental impact in their designs."
+             }
+             
+        ]
+    },
+    {
+        "id":8,
+        "page_title":"Material Provider",
+        "slug":"material-provider",
+        "featured_image": "/images/services/planing.jpg",
+        "title":"We offer the best planning service",
+        "subtitle":"About Planning Service in Yellow Wood Design & Constructions",
+        "service_description":"<p> Planning architecture involves designing and organizing spaces to meet specific needs, whether it's for residential, commercial, or public purposes. It encompasses understanding client requirements, considering site constraints, adhering to building codes and regulations, and creating aesthetically pleasing and functional designs. From conceptual sketches to detailed blueprints, architects blend creativity with technical expertise to bring structures to life. They also often collaborate with engineers, contractors, and other professionals to ensure projects are executed smoothly and successfully. Architecture isn't just about creating buildings; it's about shaping environments and improving the way people interact with their surroundings.</p> <p>Architects work closely with clients to understand their needs, goals, and budget for the project. This stage involves gathering information about spatial requirements, functional needs, and any specific preferences or constraints.</p><p>Before designing a building, architects thoroughly analyze the site where it will be located. Factors such as topography, climate, vegetation, neighboring structures, and legal restrictions all influence the design process.</p><p>This is where creativity flourishes. Architects develop initial design concepts that address the client's requirements while considering the site context. Sketches, diagrams, and 3D models are often used to communicate these ideas.</p>",
+        "faqs":[
+            {
+               "ques":"1 - What is the role of an architect in planning architecture?",
+               "ans":" Architects design and organize spaces, ensuring they meet client needs, adhere to regulations, and blend creativity with functionality."
+            },
+            {
+                "ques":"2 - How long does it typically take to complete the architectural planning process for a building?",
+                "ans":"The timeline varies depending on the project's complexity and scope, but it can range from several months to several years from initial concept to completion."
+             },
+             {
+                "ques":"3 - What software do architects use for planning architecture?",
+                "ans":"Architects commonly use software such as AutoCAD, Revit, SketchUp, and Adobe Creative Suite for drafting, modeling, and visualization during the architectural planning process."
+             },
+             {
+                "ques":"4 - How do architects ensure their designs are environmentally friendly?",
+                "ans":"Architects incorporate sustainable design principles such as energy efficiency, use of renewable materials, and consideration of site orientation and natural ventilation to minimize environmental impact in their designs."
+             }
+             
+        ]
+    }
+]

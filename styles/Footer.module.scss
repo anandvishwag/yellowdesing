@@ -1,0 +1,118 @@
+@import 'colors';
+.footerWrapper{
+    background-color: #f3f1ec;
+    padding: 70px 0px 50px;
+
+    .footerBrand{
+        max-width: 200px;
+        margin: 0 auto;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .followUs{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+        span{
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+            display: inline-block;
+            margin-right: 10px;
+            color: $secondary_color;
+        }
+        ul{
+            li{
+                display: inline-block;
+                margin: 5px;
+                a{
+                    color: $secondary_color;
+                }
+            }
+        }
+    }
+
+    .footerWidget{
+        h3{
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            color: $secondary_color;
+            margin-bottom: 15px;
+        }
+        .addressInfo{
+            li{
+                margin-bottom: 20px;
+                font-family: "Poppins", sans-serif;
+                font-weight: 400;
+            }
+        }
+        .quickLinks{
+            li{
+                margin-bottom: 15px;
+                a{
+                    color: black;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 400;
+                }
+            } 
+        }
+    }
+    @media screen and (max-width: 768px) {
+        padding: 40px 0px 30px;
+        .footerWidget{
+            margin-bottom: 15px;
+        } 
+    }
+}
+.footerBottom{
+    background-color: $dark_secondary_color;
+    width: 100%;
+    padding: 20px 15px;
+    .footerBottomInner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p{
+            margin-bottom: 0px;
+            color:$white;
+            font-size: 14px;
+            font-weight: 300;
+        }
+        ul{
+            li{
+                display: inline-block;
+
+                a{
+                    color: $white;
+                    display: block;
+                    padding: 5px 25px;
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .footerBottomInner{
+            display: block;
+            text-align: center;
+            p{
+                margin-bottom: 15px;
+               
+            }
+            ul{
+                li{
+                    a{
+                        font-size: 12px;
+                        padding: 5px 10px;
+                    }
+                }
+            }
+           
+        }
+    }
+}
