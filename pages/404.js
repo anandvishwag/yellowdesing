@@ -7,7 +7,7 @@ const PageNotFound = () => {
             <div className={styles.errorInnerWrapper}>
               <h1>4<span>0</span>4</h1>
               <p>Page not found !</p>
-              <Link href={'#'}><a>Back to Home</a></Link>
+              <Link href={'/'}><a>Back to Home</a></Link>
             </div>
            
         </div>
