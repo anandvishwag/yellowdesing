@@ -8,7 +8,7 @@ import parse from 'html-react-parser';
 export async function getServerSideProps({ params }) {
     const { slug } = params;
   
-    const res = await fetch(`/api/services/${slug}`);
+    const res = await fetch(`https://yellowdesing.vercel.app/api/services/${slug}`);
     if (!res.ok) {
         return {
           notFound: true,
