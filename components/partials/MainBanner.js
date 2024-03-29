@@ -7,11 +7,11 @@ const images = [
    },
    {
     id:2,
-    image:"/images/banner_thumbnail.jpg",
+    image:"/images/slide2.jpg",
    },
    {
     id:3,
-    image:"/images/banner_thumbnail.jpg",
+    image:"/images/slide3.jpg",
    }
 ];
 

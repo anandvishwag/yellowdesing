@@ -42,7 +42,12 @@ a:hover{
     color: $primary_color;
 }
 
-
+.carousel-indicators [data-bs-target] {
+    background-color: #7f6127 !important;
+}
+.carousel-indicators{
+    bottom: -37px !important;
+}
 .animationBox{
      div{
         display: flex;
