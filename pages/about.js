@@ -75,7 +75,7 @@ const About = () => {
                         <div className='col-md-8'>
                            <div className={styles.contactBox}>
                               <h3>Connect with us for a unique exprience of construction services.</h3>
-                              <Link href={'/'}><a>Contact Us</a></Link>
+                              <Link href={'/contact-us'}><a>Contact Us</a></Link>
                            </div>
                         </div>
                      </div>
@@ -90,52 +90,76 @@ const About = () => {
                      <div className={styles.serviceList}>
                         <div className='row'>
                            <div className='col-md-3 col-6'>
-                              <div className={styles.serviceItems}>
+                              <Link href={'/services/2d-design'}>
+                                 <a> <div className={styles.serviceItems}>
                                  <img src='/images/services/service-1.png' alt='serviceThumb' />
                                  <h3>2D Design</h3>
-                              </div>
+                              </div></a>
+                              </Link>
+                             
                            </div>
                            <div className='col-md-3 col-6'>
-                              <div className={styles.serviceItems}>
+                           <Link href={'/services/3d-elevation'}>
+                                 <a> <div className={styles.serviceItems}>
                                  <img src='/images/services/service-2.png' alt='serviceThumb' />
                                  <h3>3D Elevation</h3>
-                              </div>
+                              </div></a>
+                              </Link>
+                             
                            </div>
                            <div className='col-md-3 col-6'>
-                              <div className={styles.serviceItems}>
+                           <Link href={'/services/material-provider'}>
+                                 <a> <div className={styles.serviceItems}>
                                  <img src='/images/services/service-3.png' alt='serviceThumb' />
                                  <h3>Building material supply</h3>
-                              </div>
+                              </div></a>
+                              </Link>
+                             
                            </div>
                            <div className='col-md-3 col-6'>
-                              <div className={styles.serviceItems}>
+                           <Link href={'/services/interior-designing'}>
+                                 <a>  <div className={styles.serviceItems}>
                                  <img src='/images/services/service-4.png' alt='serviceThumb' />
                                  <h3>Interior design</h3>
-                              </div>
+                              </div></a>
+                              </Link>
+                            
                            </div>
                            <div className='col-md-3 col-6'>
-                              <div className={styles.serviceItems}>
+                           <Link href={'/services/planing'}>
+                                 <a> <div className={styles.serviceItems}>
                                  <img src='/images/services/service-5.png' alt='serviceThumb' />
                                  <h3>Planning</h3>
-                              </div>
+                              </div></a>
+                              </Link>
+                             
                            </div>
                            <div className='col-md-3 col-6'>
-                              <div className={styles.serviceItems}>
+                           <Link href={'/services/structural-designing'}>
+                                 <a> <div className={styles.serviceItems}>
                                  <img src='/images/services/service-6.png' alt='serviceThumb' />
                                  <h3>Structure design</h3>
-                              </div>
+                              </div></a>
+                              </Link>
+                             
                            </div>
                            <div className='col-md-3 col-6'>
-                              <div className={styles.serviceItems}>
+                           <Link href={'/services/vaastu-consultation'}>
+                                 <a>   <div className={styles.serviceItems}>
                                  <img src='/images/services/service-7.png' alt='serviceThumb' />
-                                 <h3>Vastu</h3>
-                              </div>
+                                 <h3>Vastu Consultation</h3>
+                              </div></a>
+                              </Link>
+                           
                            </div>
                            <div className='col-md-3 col-6'>
-                              <div className={styles.serviceItems}>
+                           <Link href={'/services/waterproofing'}>
+                                 <a> <div className={styles.serviceItems}>
                                  <img src='/images/services/service-8.png' alt='serviceThumb' />
                                  <h3>Water proofing</h3>
-                              </div>
+                              </div></a>
+                              </Link>
+                             
                            </div>
                         </div>
                      </div>

@@ -21,7 +21,7 @@ const BuildingMaterialEnquiryForm = () => {
                     <div className={`row ${styles.formGroup}`}>
                         <div className='col-md-6 mb-15'>
                             <select className={styles.formControl}>
-                                <option>Material Service</option>
+                                <option>Material Name</option>
                             </select>
                         </div>
                         <div className='col-md-6'>

@@ -24,12 +24,12 @@ const Home = () => {
                 <span>Welcome to</span>
                 <h1>Yellow <span>Wood</span></h1>
                 <h4>Design & Construction</h4>
-                <p>We are working towards a unique and different house
-                  construction exprience with complete building sulution
-                  starting from concept to real time exprence of home. exprience with complete building sulution
-                  starting from concept to real time exprence of home.</p>
+                <p>We are working towards an unique and different house
+                  construction experience with complete building solution
+                  starting from concept to real time experience of home. experience with complete building solution
+                  starting from concept to real time experience of home.</p>
 
-                <Link href={'/'}><a>Know More</a></Link>
+                <Link href={'/about'}><a>Know More</a></Link>
               </div>
             </div>
             <div className='col-md-7'>
@@ -44,13 +44,13 @@ const Home = () => {
         <div className='container'>
           <div className={styles.infoInnerBox}>
             <div className={`${styles.infoItems} ${styles.infoItem1}`}>
-              <p>10 Years Experience | Quality Insurance | On Time</p>
+              <p>10 Years of Experience/Quality Assurance / Timely Delivery of Project</p>
             </div>
             <div className={`${styles.infoItems} ${styles.infoItem2}`}>
-              <p>Customer Services <br /> ( 2D, 3D Interior Design )</p>
+              <p>Customer Services <br /> ( 2D, 3D )</p>
             </div>
             <div className={`${styles.infoItems} ${styles.infoItem3}`}>
-              <p>Warehouse Specialist <br /> ( Design & Construction )</p>
+              <p>Structural Detailing <br /> Interior Design</p>
             </div>
             <div className={`${styles.infoItems} ${styles.infoItem4}`}>
               <p>Building Material <br /> ( Cement, Steel, Sand, Bricks )</p>
@@ -65,7 +65,7 @@ const Home = () => {
               <div className='col-md-6'>
                 <div className={styles.servicesContent}>
                   <h1>HOUSE CONSTRUCTION SERVICE</h1>
-                  <p>We are working towards a unique and different house construction exprience with complete building sulution starting from concept to real time exprence of home building Our dedicated team of experts are working torards better customer exprience .We are inclined towards quality construction and services .Your trust is utmost priority As a complete building solution Yellow Wood Design and Constructions is also available for all your building material needs and that with a genuin product gaurentee.</p>
+                  <p>We are working towards an unique and different house construction experience with complete building solution starting from concept to real time expense of home building Our dedicated team of experts are working towards better customer experience .We are inclined towards quality construction and services .Your trust is utmost priority As a complete building solution Yellow Wood Design and Constructions is also available for all your building material needs and that with a genuine product guarantee.</p>
                   <Link href={'/'}>Basic Package  Start from ₹1500/sft </Link>
                 </div>
 
@@ -91,10 +91,9 @@ const Home = () => {
                 <div className={styles.materialContent}>
                   <h4>Your Online </h4>
                   <h1>Building Materials</h1>
-                  <h5>Store for all construction needs.</h5>
-                  <p>As a complete building sulution Yellow Wood Design and COnstructions is also available for all your building material needs and that with a genuin product gaurentee.</p>
-                  <p>As a complete building sulution Yellow Wood Design and COnstructions is also available for all your building material needs and that with a genuin product gaurentee.</p>
-                  <p>As a complete building sulution Yellow Wood Design and COnstructions is also available for all your building material needs and that with a genuin product gaurentee.</p>
+                  <h5>Store for all your construction needs.</h5>
+                  <p>As a complete building solution Yellow Wood Design and Constructions is also available for all your building material needs and that with a genuine product guarantee.</p>
+                  <p>We Can add list of building materials along with remarks with best prise available in the market with assured quality of product.</p>
 
                 </div>
               </div>
@@ -142,7 +141,7 @@ const Home = () => {
                 <div className={styles.aboutContent}>
                   <h1>About</h1>
                   <div className={styles.shadowBox}>
-                    <p>Yellow Wood Construction is a new generation making dream homes at affordable & assured Quality construction. We found there is severe trust deficit with building contractor & labor contractor from customer end point. What we were always sure is this can be fixed by careful study and research, combined with technical knowledge and artistic judgment. We wil do this through a strong in house professional architects, designers, engineers, projects managers with 15 years experience in the construction industry. The entire work flow from booking, design, documentation, project execution, quality checks, payment flow & final handover.</p>
+                    <p>Yellow Wood Construction is a new generation making dream homes at affordable & assured Quality construction. We found there is severe trust deficit with building contractor & labor contractor from customer end point. What we were always sure is this can be fixed by careful study and research, combined with technical knowledge and artistic judgment. We wil do this through a strong in house professional architects, designers, engineers, projects managers with 10 years experience in the construction industry. The entire work flow from booking, design, documentation, project execution, quality checks, payment flow & final handover.</p>
 
                     <p><strong>Quality Standards : </strong><br />
                       Our main focus is customer satisfaction & to achieve highest quality standards we ensure the use of branded materials.</p>
@@ -242,11 +241,11 @@ const Home = () => {
         <div className='container'>
            <h1>Recent Work</h1>
            <div className={styles.recentWorksInner}>
-              <div className='row'>
+              <div className='row justify-content-center'>
                 <div className='col-md-4 col-6'>
                    <div className={styles.recentWorksItems}>
                      <div className={styles.itemThumb}>
-                       <img src='/images/property/property1.png' alt='property'/>
+                       <img src='/images/services/service-4.png' alt='property'/>
                         <div className={styles.overlayBg}></div>
                      </div>
                       <Link href={'/'}><a className={`${styles.propertyButton}`}>
@@ -258,11 +257,11 @@ const Home = () => {
                 <div className='col-md-4 col-6'>
                    <div className={styles.recentWorksItems}>
                      <div className={styles.itemThumb}>
-                       <img src='/images/property/property2.png' alt='property'/>
+                       <img src='/images/services/service-1.png' alt='property'/>
                         <div className={styles.overlayBg}></div>
                      </div>
                      <Link href={'/'}><a className={`${styles.propertyButton}`}>
-                        Interior Design
+                         2 D planning 
                         <span></span>
                         </a></Link> 
                    </div>
@@ -270,11 +269,11 @@ const Home = () => {
                 <div className='col-md-4 col-6'>
                    <div className={styles.recentWorksItems}>
                      <div className={styles.itemThumb}>
-                       <img src='/images/property/property3.png' alt='property'/>
+                       <img src='/images/services/service-2.png' alt='property'/>
                         <div className={styles.overlayBg}></div>
                      </div>
                      <Link href={'/'}><a className={`${styles.propertyButton}`}>
-                        Interior Design
+                         3D Plan
                         <span></span>
                         </a></Link> 
                    </div>
@@ -282,11 +281,11 @@ const Home = () => {
                 <div className='col-md-4 col-6'>
                    <div className={styles.recentWorksItems}>
                      <div className={styles.itemThumb}>
-                       <img src='/images/property/property4.png' alt='property'/>
+                       <img src='/images/services/service-6.png' alt='property'/>
                         <div className={styles.overlayBg}></div>
                      </div>
                      <Link href={'/'}><a className={`${styles.propertyButton}`}>
-                        Interior Design
+                         Warehouse Construction 
                         <span></span>
                         </a></Link> 
                    </div>
@@ -294,27 +293,16 @@ const Home = () => {
                 <div className='col-md-4 col-6'>
                    <div className={styles.recentWorksItems}>
                      <div className={styles.itemThumb}>
-                       <img src='/images/property/property5.png' alt='property'/>
+                       <img src='/images/services/service-8.png' alt='property'/>
                         <div className={styles.overlayBg}></div>
                      </div>
                      <Link href={'/'}><a className={`${styles.propertyButton}`}>
-                        Interior Design
+                        Waterproofing 
                         <span></span>
                         </a></Link> 
                    </div>
                 </div>
-                <div className='col-md-4 col-6'>
-                   <div className={styles.recentWorksItems}>
-                     <div className={styles.itemThumb}>
-                       <img src='/images/property/property6.png' alt='property'/>
-                        <div className={styles.overlayBg}></div>
-                     </div>
-                     <Link href={'/'}><a className={`${styles.propertyButton}`}>
-                        Interior Design
-                        <span></span>
-                        </a></Link> 
-                   </div>
-                </div>
+
               </div>
            </div>
         </div>
