@@ -33,8 +33,20 @@
     }
 }
 
+.authWrapper{
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 25px;
+    background: #f3f1ec57;
+    border-radius: 10px;
+}
 .innerPageWrapper{
     padding: 50px 0px;
+}
+.errorHelp{
+    font-size: 14px;
+    color: red;
 }
 .aboutContent{
     padding: 50px 70px;
