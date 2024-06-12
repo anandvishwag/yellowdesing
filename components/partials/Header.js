@@ -45,8 +45,9 @@ const isSticky = () => {
              <ul>
                 <li><Link href={'/'}><a>Home</a></Link></li>
                 <li><Link href={'/about'}><a>About</a></Link></li>
+                <li><Link href={'/blog'}><a>Blog</a></Link></li>
                 <li>
-                  <Link href={'/'}><a>Services</a></Link>
+                  <Link href={'/services'}><a>Services</a></Link>
                     <ul className={styles.dropdownMenu}>
                        <li><Link href={'/services/planing'}><a>Planing</a></Link></li>
                        <li><Link href={'/services/2d-design'}><a>2D Design</a></Link></li>
@@ -58,7 +59,7 @@ const isSticky = () => {
                        <li><Link href={'/services/material-provider'}><a>Material Provider</a></Link></li>
                     </ul>
                   </li>
-                <li><Link href={'/building-material-enquiry-form'}><a>Enquiry</a></Link></li>
+                {/* <li><Link href={'/building-material-enquiry-form'}><a>Enquiry</a></Link></li> */}
                 <li><Link href={'/contact-us'}><a>Contact</a></Link></li>
              </ul>
 

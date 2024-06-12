@@ -8,37 +8,37 @@ import parse from 'html-react-parser';
 export async function getServerSideProps({ params }) {
     const { slug } = params;
   
-    const res = await fetch(`http://localhost:3000/api/services/${slug}`);
-    if (!res.ok) {
+    const res = await fetch(`https://api.yellowoods.com/api/services/${slug}`);
+    const data = await res.json();
+    if (!data.status) {
         return {
           notFound: true,
         };
       }
-    const service = await res.json();
     
+    // Pass data to the page component as props
     return {
       props: {
-        service,
+        data,
       },
     };
   }
-const SingleService = ({service}) => {
+const SingleService = ({data}) => {
     let bannerImage = '/images/innerBnr.jpg';
 
   return (
    <Fragment>
-      <InnerPageBanner pageTitle={service.page_title} bannerImage={bannerImage} style={styles}/>
+      <InnerPageBanner pageTitle={data.service.title} bannerImage={bannerImage} style={styles}/>
       <div className={styles.innerPageWrapper}>
         <div className='container'>
             <div className='row'>
                 <div className='col-md-9'>
                     <div className={styles.serviceFeatured}>
-                        <img src={service.featured_image} alt='featured image'/>
+                        <img src={data.service.thumbnail} alt='featured image'/>
                     </div>
                     <div className={styles.serviceDetails}>
-                        <h4 className={styles.subTitle}>{service.subtitle}</h4>
-                        <h1 className={styles.title}>{service.title}</h1>
-                         {parse(service.service_description)}
+                      
+                         {parse(data.service.description)}
                     </div>
                 </div>
                 <div className='col-md-3'>
@@ -91,7 +91,7 @@ const SingleService = ({service}) => {
                     </div>
                 </div>
             </div>
-            <div className={styles.faqs}>
+            {/* <div className={styles.faqs}>
                 <h1 className={styles.faqTitle}>Faqs</h1>
                  <Accordion defaultActiveKey="0">
                     {
@@ -105,7 +105,7 @@ const SingleService = ({service}) => {
                         })
                     }
               </Accordion>
-            </div>
+            </div> */}
         </div>
       </div>
    </Fragment>

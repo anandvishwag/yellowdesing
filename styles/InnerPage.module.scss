@@ -33,20 +33,8 @@
     }
 }
 
-.authWrapper{
-    width: 100%;
-    max-width: 500px;
-    margin: 50px auto;
-    padding: 25px;
-    background: #f3f1ec57;
-    border-radius: 10px;
-}
 .innerPageWrapper{
     padding: 50px 0px;
-}
-.errorHelp{
-    font-size: 14px;
-    color: red;
 }
 .aboutContent{
     padding: 50px 70px;
@@ -384,6 +372,7 @@
     img{
         width: 100%;
     }
+    margin-bottom: 15px;
 }
 .serviceDetails{
     .subTitle{
@@ -400,7 +389,71 @@
         font-size: 16px;
     }
 }
+.blogInnerWrapper{
+    .blogItem{
+    margin: 25px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    .blogThumb{
+        img{
+            width: auto;
+            height: 250px;
+        }
+    }
+    .propertyButton{
+        width: 100%;
+        display: block;
+        padding: 15px;
+        color: #000;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    }
 
+    .featuredImage {
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        img{
+          width: 100%;
+        }
+    }
+    .aboutPost{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        div{
+            margin-right: 25px;
+            display: flex;
+            align-items: center;
+            span{
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+               
+                strong{
+                    margin-right: 5px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+    .blogContent {
+        h1{
+            text-align: left;
+        }
+        h3{
+            font-size: 27px;
+            font-weight: 500;
+            color: #7A5E27;
+            font-family: "Poppins", sans-serif;
+        }
+    }
+}
 .serviceWidget{
     padding: 15px;
     box-shadow: 0px 0px 25px rgba(0,0,0,0.03);
@@ -429,6 +482,43 @@
         }
     }
 }
+
+.serviceWidget2{
+    padding: 10px 5px;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.03);
+    border-radius: 20px;
+    margin-bottom: 25px;
+    .widgetTitle{
+        font-size: 30px;
+        color: #a28e68;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    .widgetContent ul li{
+        display: block;
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 14px;
+            color: #000;
+            padding: 10px 0px;
+            border-bottom: 1px dashed #e5e5e5;
+          
+        }
+        a:nth-last-child(1){
+            border-bottom: 0px;
+        }
+    }
+}
+.rd{
+    font-size: 12px;
+    color: $primary_color;
+}
+.errorHelp{
+    font-size: 14px;
+    color: red;
+}
 .ourProductS{
     padding: 50px 0px;
     h1{
@@ -452,4 +542,81 @@
         text-align: center;
         margin-bottom: 15px;
     }
+}
+
+.services {
+    padding: 70px 0px;
+
+    h1 {
+        color: $secondary_color;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 45px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .recentWorksInner {
+        .recentWorksItems {
+            margin: 25px;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+            .itemThumb{
+              position: relative;
+              img {
+                width: 100%;
+                z-index: 1;
+              }
+            //   .overlayBg {
+            //     position: absolute;
+            //     background-color: rgba(0, 0, 0, 0.1);
+            //     left: 0;
+            //     right: 0;
+            //     bottom: 0;
+            //     top: 0;
+            //     z-index: 10;
+            // }
+            }
+           
+         .propertyButton{
+            display: inline-block;
+            padding: 10px 25px;
+            position: absolute;
+            background-color: #b88a2c;
+            color: $white;
+            z-index: 100;
+            left: 0;
+            right: 0;
+            bottom: 15px;
+            text-align: center;
+            max-width: 250px;
+            margin: 0 auto;
+            font-weight: 500;
+            font-size: 18px;
+            border-radius: 25px;
+            z-index: 100;
+            transition: all 300ms ease-in;
+            border: 1px solid transparent;
+            font-size: 16px;
+            @media screen and (max-width: 768px) {
+                   padding: 7px 15px;
+                   font-size: 15px;
+                   max-width: 180px;
+                   bottom: 15px;
+            }
+         }
+         .propertyButton:hover{
+            background-color: $primary_color;
+            color: #fff;
+            border: 1px solid #fff;
+         }
+        }
+    }
+    @media screen and (max-width: 768px) {
+        padding: 50px 0px;
+      
+ }
+
 }
