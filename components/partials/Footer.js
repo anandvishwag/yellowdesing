@@ -28,10 +28,10 @@ const Footer = () => {
                 <div className={styles.footerWidget}>
                    <h3>Contact Details</h3>
                    <ul className={styles.addressInfo}>
-                       <li><span><FiMapPin size={18}/></span> Shivnagar, Varanasi</li>
-                       <li><span><FiPhone  size={18}/></span> +91-9696475344, 8765768335</li>
-                       <li><span><FiMail  size={18}/></span> Yellowwoodesign@hotmail.com</li>
-                       <li><span><FaWhatsapp size={18}/></span> +91-9696475344</li>
+                       <li><Link href={'https://maps.app.goo.gl/mCzbi8sBG7AfbKML6'}><a target='_blank'><span><FiMapPin size={18}/></span> Shivnagar, Varanasi</a></Link></li>
+                       <li><Link href={'tel:+91-9696475344'}><a><span><FiPhone  size={18}/></span> +91-9696475344, 8765768335</a></Link></li>
+                       <li><Link href={'mailto:Yellowwoodesign@hotmail.com'}><a><span><FiMail  size={18}/></span> Yellowwoodesign@hotmail.com</a></Link></li>
+                       <li><Link href={'https://wa.link/u5z168'}><a target='_blank'><span><FaWhatsapp size={18}/></span> +91-9696475344</a></Link></li>
                    </ul>
                 </div>
               </div>
@@ -40,10 +40,10 @@ const Footer = () => {
                    <h3>Quick Links</h3>
                    <ul className={styles.quickLinks}>
                        <li><Link href={'/'}><a>Home</a></Link></li>
-                       <li><Link href={'/'}><a>About us</a></Link></li>
-                       <li><Link href={'/'}><a>Services</a></Link></li>
-                       <li><Link href={'/'}><a>Enquiry Form</a></Link></li>
-                       <li><Link href={'/'}><a>Contact Us</a></Link></li>
+                       <li><Link href={'/about'}><a>About us</a></Link></li>
+                       <li><Link href={'/services'}><a>Services</a></Link></li>
+                       <li><Link href={'/blog'}><a>Blog</a></Link></li>
+                       <li><Link href={'/contact-us'}><a>Contact Us</a></Link></li>
                    </ul>
                 </div>
               </div>

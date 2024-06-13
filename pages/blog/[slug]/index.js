@@ -1,17 +1,18 @@
 import React, { Fragment } from 'react'
-import InnerPageBanner from '../../../components/partials/InnerPageBanner'
 import styles from '../../../styles/InnerPage.module.scss'
 import Link from 'next/link';
-import { FiChevronRight } from "react-icons/fi";
 import { MdOutlineDateRange } from "react-icons/md";
 import { FaUser } from "react-icons/fa";
 import parse from 'html-react-parser';
+import Head from 'next/head';
+import { API_URL, APP_URL } from '../../../utils/constant';
+
 export async function getServerSideProps( { params }) {
     const { slug } = params;
    
     // Fetch data from an external API
-    const res = await fetch(`https://api.yellowoods.com/api/post/${slug}`);
-    const resLatest = await fetch(`https://api.yellowoods.com/api/posts/latest`);
+    const res = await fetch(`${API_URL}/api/post/${slug}`);
+    const resLatest = await fetch(`${API_URL}/api/posts/latest`);
     const resp = await res.json();
     const respLatest = await resLatest.json();
 
@@ -23,7 +24,7 @@ export async function getServerSideProps( { params }) {
 
     const data = resp.post;
     const latestPosts = respLatest.posts;
-    console.log(latestPosts);
+
     // Pass data to the page component as props
     return {
       props: {
@@ -34,10 +35,29 @@ export async function getServerSideProps( { params }) {
   }
 
 const BlogSingle = ({data, latestPosts}) => {
-   let bannerImage = '/images/innerBnr.jpg';
+
    return (
       <Fragment>
-         {/* <InnerPageBanner style={styles} pageTitle={data.title} bannerImage={bannerImage} /> */}
+<Head>
+          <title>Blog :: {data.meta_title}</title>
+          <meta name="title" content={data.meta_title}/>
+          <meta name="description" content={data.meta_description}/>
+          <meta name="keywords" content={data.meta_keywords}/>
+
+           {/* OG Details */}
+           {/* <meta property="og:type" content="website"/>
+           <meta property="og:url" content={seoData.og_url}/>
+           <meta property="og:title" content={seoData.og_title}/>
+           <meta property="og:description" content={seoData.og_description}/>
+          <meta property="og:image" content={seoData.og_image} />
+
+          <meta property="twitter:card" content={seoData.twitter_card} />
+          <meta property="twitter:url" content={seoData.page_url} />
+          <meta property="twitter:title" content={seoData.twitter_title} />
+          <meta property="twitter:description" content={seoData.twitter_description}/>
+          <meta property="twitter:image" content={seoData.twitter_image} /> */}
+          <link rel="canonical" href={`${APP_URL}/blog/${data.slug}`} />
+        </Head>
          <div className={styles.innerPageContent}>
           <div className='container'>
           <div className={styles.homeContainer}>
@@ -69,7 +89,7 @@ const BlogSingle = ({data, latestPosts}) => {
                                 <li>
                                     {
                                         latestPosts && latestPosts.map((item)=>{
-                                           return <Link href={`/blog/${item.slug}`} key={item.id}><a><span>{item.title}  <span className={styles.rd}>Read more</span></span> <FiChevronRight /></a></Link>
+                                           return <Link href={`/blog/${item.slug}`} key={item.id}><a><span>{item.title}  <span className={styles.rd}>Read more</span></span> </a></Link>
                                         })
                                     }
                                     

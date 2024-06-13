@@ -31,7 +31,10 @@ const isSticky = () => {
         <div className={styles.headerRight}>
            <div className={styles.headerTop}>
               <div className={styles.whatsapp}>
-             <FaWhatsapp color='#23AC44' size={25}/>  <span>+91 - 9696475344</span>
+                <a href='https://wa.link/u5z168' target='_blank'>
+                <FaWhatsapp color='#23AC44' size={25}/>  <span>+91 - 9696475344</span>
+                </a>
+            
               </div>
               <div className={styles.followUs}>
                   <span>Follow Us</span>

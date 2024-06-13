@@ -2,10 +2,11 @@ import React, { Fragment } from 'react'
 import InnerPageBanner from '../../components/partials/InnerPageBanner'
 import styles from '../../styles/InnerPage.module.scss'
 import Link from 'next/link';
-
+import Head from 'next/head';
+import { API_URL, APP_URL } from '../../utils/constant';
 export async function getServerSideProps() {
     // Fetch data from an external API
-    const res = await fetch('https://api.yellowoods.com/api/services');
+    const res = await fetch(`${API_URL}/api/services`);
     const data = await res.json();
     if (!data.status) {
         return {
@@ -13,6 +14,7 @@ export async function getServerSideProps() {
         };
       }
     
+  
     // Pass data to the page component as props
     return {
       props: {
@@ -25,6 +27,27 @@ const Services = ({data}) => {
    let bannerImage = '/images/innerBnr.jpg';
    return (
       <Fragment>
+         <Head>
+          <title>Services :: Yellow Wood</title>
+          <meta name="title" content="Services :: Yellow Wood"/>
+          <meta name="description" content="Services :: Yellow Wood"/>
+          <meta name="keywords" content="Services, Yellow Wood"/>
+
+           {/* OG Details */}
+           {/* <meta property="og:type" content="website"/>
+           <meta property="og:url" content={seoData.og_url}/>
+           <meta property="og:title" content={seoData.og_title}/>
+           <meta property="og:description" content={seoData.og_description}/>
+          <meta property="og:image" content={seoData.og_image} />
+
+          <meta property="twitter:card" content={seoData.twitter_card} />
+          <meta property="twitter:url" content={seoData.page_url} />
+          <meta property="twitter:title" content={seoData.twitter_title} />
+          <meta property="twitter:description" content={seoData.twitter_description}/>
+          <meta property="twitter:image" content={seoData.twitter_image} /> */}
+          <link rel="canonical" href={`${APP_URL}/services`} />
+        </Head>
+
          <InnerPageBanner style={styles} pageTitle="Services" bannerImage={bannerImage} />
          <div className={styles.innerPageContent}>
           <div className='container'>

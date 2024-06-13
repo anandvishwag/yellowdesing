@@ -4,7 +4,8 @@ import styles from '../styles/InnerPage.module.scss'
 import { FaWhatsapp, FaMapMarker, FaPhoneAlt } from "react-icons/fa";
 import { Formik } from 'formik';
 import Swal from 'sweetalert2'
-
+import Head from 'next/head';
+import { API_URL, APP_URL } from '../utils/constant';
 const ContactUs = () => {
     let bannerImage = '/images/innerBnr.jpg';
 
@@ -28,7 +29,7 @@ const ContactUs = () => {
             },
             body: JSON.stringify(values)
           };
-          const response = await fetch('https://api.yellowoods.com/api/enquiry-submit', requestOptions);
+          const response = await fetch(`${API_URL}/api/enquiry-submit`, requestOptions);
 
           if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -55,6 +56,26 @@ const ContactUs = () => {
     }
     return (
         <Fragment>
+                    <Head>
+          <title>Contact Us :: Yellow Wood</title>
+          <meta name="title" content="Contact Us :: Yellow Wood"/>
+          <meta name="description" content="Contact Us :: Yellow Wood"/>
+          <meta name="keywords" content="Contact Us, Yellow Wood"/>
+
+           {/* OG Details */}
+           {/* <meta property="og:type" content="website"/>
+           <meta property="og:url" content={seoData.og_url}/>
+           <meta property="og:title" content={seoData.og_title}/>
+           <meta property="og:description" content={seoData.og_description}/>
+          <meta property="og:image" content={seoData.og_image} />
+
+          <meta property="twitter:card" content={seoData.twitter_card} />
+          <meta property="twitter:url" content={seoData.page_url} />
+          <meta property="twitter:title" content={seoData.twitter_title} />
+          <meta property="twitter:description" content={seoData.twitter_description}/>
+          <meta property="twitter:image" content={seoData.twitter_image} /> */}
+          <link rel="canonical" href={`${APP_URL}/contact-us`} />
+        </Head>
             <InnerPageBanner pageTitle={'Contact Us'} bannerImage={bannerImage} style={styles} />
             <div className={styles.innerPageWrapper}>
                 <div className={`container ${styles.contactWrapper}`}>

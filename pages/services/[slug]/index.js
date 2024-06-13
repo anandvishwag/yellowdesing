@@ -5,17 +5,18 @@ import { FiChevronRight } from "react-icons/fi";
 import Accordion from 'react-bootstrap/Accordion';
 import Link from 'next/link'
 import parse from 'html-react-parser';
+import Head from 'next/head';
+import { API_URL, APP_URL } from '../../../utils/constant';
 export async function getServerSideProps({ params }) {
     const { slug } = params;
   
-    const res = await fetch(`https://api.yellowoods.com/api/services/${slug}`);
+    const res = await fetch(`${API_URL}/api/services/${slug}`);
     const data = await res.json();
     if (!data.status) {
         return {
           notFound: true,
         };
       }
-    
     // Pass data to the page component as props
     return {
       props: {
@@ -28,6 +29,26 @@ const SingleService = ({data}) => {
 
   return (
    <Fragment>
+    <Head>
+          <title>Services :: {data.service.meta_title}</title>
+          <meta name="title" content={data.service.meta_title}/>
+          <meta name="description" content={data.service.meta_description}/>
+          <meta name="keywords" content={data.service.meta_keywords}/>
+
+           {/* OG Details */}
+           {/* <meta property="og:type" content="website"/>
+           <meta property="og:url" content={seoData.og_url}/>
+           <meta property="og:title" content={seoData.og_title}/>
+           <meta property="og:description" content={seoData.og_description}/>
+          <meta property="og:image" content={seoData.og_image} />
+
+          <meta property="twitter:card" content={seoData.twitter_card} />
+          <meta property="twitter:url" content={seoData.page_url} />
+          <meta property="twitter:title" content={seoData.twitter_title} />
+          <meta property="twitter:description" content={seoData.twitter_description}/>
+          <meta property="twitter:image" content={seoData.twitter_image} /> */}
+          <link rel="canonical" href={`${APP_URL}/services/${data.service.slug}`} />
+        </Head>
       <InnerPageBanner pageTitle={data.service.title} bannerImage={bannerImage} style={styles}/>
       <div className={styles.innerPageWrapper}>
         <div className='container'>
@@ -91,21 +112,24 @@ const SingleService = ({data}) => {
                     </div>
                 </div>
             </div>
-            {/* <div className={styles.faqs}>
+            {
+                data.service && data.service.faqs.length > 0 &&   <div className={styles.faqs}>
                 <h1 className={styles.faqTitle}>Faqs</h1>
                  <Accordion defaultActiveKey="0">
                     {
-                        service.faqs.map((item, index)=>{
+                      data.service.faqs.map((item, index)=>{
                             return  <Accordion.Item eventKey={`${index}`}>
                             <Accordion.Header>{item.ques}</Accordion.Header>
                             <Accordion.Body>
-                            {item.ans}
+                            {parse(item.ans)}
                             </Accordion.Body>
                           </Accordion.Item>
                         })
                     }
               </Accordion>
-            </div> */}
+            </div>
+            }
+          
         </div>
       </div>
    </Fragment>

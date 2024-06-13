@@ -2,29 +2,55 @@ import React, { Fragment } from 'react'
 import InnerPageBanner from '../../components/partials/InnerPageBanner'
 import styles from '../../styles/InnerPage.module.scss'
 import Link from 'next/link';
-import { FiChevronRight } from "react-icons/fi";
+import Head from 'next/head';
+import { API_URL, APP_URL } from '../../utils/constant';
 export async function getServerSideProps() {
     // Fetch data from an external API
-    const res = await fetch('https://api.yellowoods.com/api/posts');
+    const res = await fetch(`${API_URL}/api/posts`);
+    const resLatest = await fetch(`${API_URL}/api/posts/latest`);
     const data = await res.json();
-    if (!data.status) {
+    const latestData = await resLatest.json();
+    if (!data.status || !latestData.status) {
         return {
           notFound: true,
         };
       }
-    
+
     // Pass data to the page component as props
     return {
       props: {
         data,
+        latestData
       },
     };
   }
 
-const Blog = ({data}) => {
+const Blog = ({data, latestData}) => {
+
    let bannerImage = '/images/innerBnr.jpg';
    return (
       <Fragment>
+          <Head>
+          <title>Blog :: Yellow Wood</title>
+          <meta name="title" content="Blog :: Yellow Wood"/>
+          <meta name="description" content="Blog :: Yellow Wood"/>
+          <meta name="keywords" content="Blog, Yellow Wood"/>
+
+           {/* OG Details */}
+           {/* <meta property="og:type" content="website"/>
+           <meta property="og:url" content={seoData.og_url}/>
+           <meta property="og:title" content={seoData.og_title}/>
+           <meta property="og:description" content={seoData.og_description}/>
+          <meta property="og:image" content={seoData.og_image} />
+
+          <meta property="twitter:card" content={seoData.twitter_card} />
+          <meta property="twitter:url" content={seoData.page_url} />
+          <meta property="twitter:title" content={seoData.twitter_title} />
+          <meta property="twitter:description" content={seoData.twitter_description}/>
+          <meta property="twitter:image" content={seoData.twitter_image} /> */}
+          <link rel="canonical" href={`${APP_URL}/blog`} />
+        </Head>
+
          <InnerPageBanner style={styles} pageTitle="Blog" bannerImage={bannerImage} />
          <div className={styles.innerPageContent}>
           <div className='container'>
@@ -32,22 +58,29 @@ const Blog = ({data}) => {
      <div className={styles.services}>
         <div className='container'>
             <div className='row'>
-                <div className='col-md-9'>
+                <div className='col-md-9 col-12'>
                 <div className={styles.blogInnerWrapper}>
               <div className='row '>
                 {
                     data && data.posts ?
                     data.posts.map((item)=>{
-                        return  <div className='col-md-6 col-6' key={item.id}>
+                        return  <div className='col-md-12 col-12' key={item.id}>
+                          <Link href={`/blog/${item.slug}`}><a>
                         <div className={styles.blogItem}>
-                        <Link href={`/blog/${item.slug}`}><a>
+                        
                           <div className={styles.blogThumb}>
                             <img src={item.thumbnail} alt='property'/>
                              <div className={styles.overlayBg}></div>
                           </div>
-                          <h3 className={`${styles.propertyButton}`}> {item.title}</h3>
-                             </a></Link> 
-                        </div>
+                          <div className={styles.blogContent}>
+                            <h3> {item.title}</h3>
+                            <p>{item.excerpt}</p>
+                            <p><strong>Publish on : </strong> {item.post_date} </p>
+                            <span className={styles.read_more}>Read More</span>
+                          </div>
+                         
+                             
+                        </div></a></Link> 
                      </div>
                     })
                      : null
@@ -57,20 +90,17 @@ const Blog = ({data}) => {
               </div>
            </div>
                 </div>
-            <div className='col-md-3'>
+            <div className='col-md-3 col-12'>
                     <div className={styles.serviceWidget}>
-                        <h2 className={styles.widgetTitle}>Our Services</h2>
+                        <h2 className={styles.widgetTitle}>Latest Posts</h2>
                         <div className={styles.widgetContent}>
                             <ul>
                                 <li>
-                                    <Link href="/services/planing"><a><span>Planning</span> <FiChevronRight /></a></Link>
-                                    <Link href="/services/2d-design"><a><span>2D Design</span> <FiChevronRight /></a></Link>
-                                    <Link href="/services/3d-elevation"><a><span>3D Elevation</span> <FiChevronRight /></a></Link>
-                                    <Link href="/services/interior-designing"><a><span>Interior Designing</span> <FiChevronRight /></a></Link>
-                                    <Link href="/services/vaastu-consultation"><a><span>Vaastu Consultation</span> <FiChevronRight /></a></Link>
-                                    <Link href="/services/structural-designing"><a><span>Structural Designing</span> <FiChevronRight /></a></Link>
-                                    <Link href="/services/waterproofing"><a><span>Waterproofing</span> <FiChevronRight /></a></Link>
-                                    <Link href="/services/material-provider"><a><span>Material Provider</span> <FiChevronRight /></a></Link>
+                                {
+                                        latestData && latestData.posts.map((item)=>{
+                                           return <Link href={`/blog/${item.slug}`} key={item.id}><a><span>{item.title}  <span className={styles.rd}>Read more</span></span> </a></Link>
+                                        })
+                                    }
                                 </li>
                             </ul>
                         </div>

@@ -1,10 +1,13 @@
 import React, { Fragment } from 'react'
+import Head from 'next/head';
 import InnerPageBanner from '../components/partials/InnerPageBanner'
 import styles from '../styles/InnerPage.module.scss'
 import Link from 'next/link';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { FiChevronLeft, FiChevronRight  } from "react-icons/fi";
+import parse from 'html-react-parser';
+import { API_URL, APP_URL } from '../utils/constant';
 const responsive = {
    superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -26,7 +29,26 @@ const responsive = {
 };
 
 
-const About = () => {
+export async function getServerSideProps() {
+   // Fetch data from an external API
+   const res = await fetch(`${API_URL}/api/testimonial/all`);
+   const resp = await res.json();
+   if (!resp.status) {
+       return {
+         notFound: true,
+       };
+     }
+
+   const testimonials = resp.testimonials;
+   // Pass data to the page component as props
+   return {
+     props: {
+      testimonials
+     },
+   };
+ }
+
+const About = ({testimonials}) => {
    let bannerImage = '/images/innerBnr.jpg';
 
    const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
@@ -41,6 +63,27 @@ const About = () => {
 
    return (
       <Fragment>
+          <Head>
+          <title>About :: Yellow Wood</title>
+          <meta name="title" content="About :: Yellow Wood"/>
+          <meta name="description" content="About :: Yellow Wood"/>
+          <meta name="keywords" content="About, Yellow Wood"/>
+
+           {/* OG Details */}
+           {/* <meta property="og:type" content="website"/>
+           <meta property="og:url" content={seoData.og_url}/>
+           <meta property="og:title" content={seoData.og_title}/>
+           <meta property="og:description" content={seoData.og_description}/>
+          <meta property="og:image" content={seoData.og_image} />
+
+          <meta property="twitter:card" content={seoData.twitter_card} />
+          <meta property="twitter:url" content={seoData.page_url} />
+          <meta property="twitter:title" content={seoData.twitter_title} />
+          <meta property="twitter:description" content={seoData.twitter_description}/>
+          <meta property="twitter:image" content={seoData.twitter_image} /> */}
+          <link rel="canonical" href={`${APP_URL}/about`} />
+        </Head>
+
          <InnerPageBanner style={styles} pageTitle="About Us" bannerImage={bannerImage} />
          <div className={styles.innerPageContent}>
             <div className={styles.aboutWrapper}>
@@ -171,73 +214,24 @@ const About = () => {
                      <div className={styles.sectionTitle}>
                         <h2>Testimonial</h2>
                      </div>
-                     <Carousel responsive={responsive} arrows={false} renderButtonGroupOutside={true} customButtonGroup={<ButtonGroup />}>
-                        <div className={styles.testimonialItem}>
+                     <Carousel ssr={true} responsive={responsive} arrows={false} renderButtonGroupOutside={true} customButtonGroup={<ButtonGroup />}>
+                     {
+                        testimonials && testimonials.map((item)=>{
+                           return   <div className={styles.testimonialItem} key={item.id}>
                            <div className={styles.testimonialUser}>
                               <div className={styles.userThumb}>
-                                 <img src='/images/user.png' alt='user'/>
+                                 <img src={item.profile_pic} alt='user'/>
                               </div>
-                              <p className={styles.userName}>Lyod Gomez</p>
+                              <p className={styles.userName}>{item.name}</p>
                            </div>
                            <div className={styles.testimonialContent}>
-                              <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure</p>
+                              {parse(item.description)}
                            </div>
                         </div>
-                        <div className={styles.testimonialItem}>
-                           <div className={styles.testimonialUser}>
-                              <div className={styles.userThumb}>
-                                 <img src='/images/user.png' alt='user'/>
-                              </div>
-                              <p className={styles.userName}>Lyod Gomez</p>
-                           </div>
-                           <div className={styles.testimonialContent}>
-                              <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure</p>
-                           </div>
-                        </div>
-                        <div className={styles.testimonialItem}>
-                           <div className={styles.testimonialUser}>
-                              <div className={styles.userThumb}>
-                                 <img src='/images/user.png' alt='user'/>
-                              </div>
-                              <p className={styles.userName}>Lyod Gomez</p>
-                           </div>
-                           <div className={styles.testimonialContent}>
-                              <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure</p>
-                           </div>
-                        </div>
-                        <div className={styles.testimonialItem}>
-                           <div className={styles.testimonialUser}>
-                              <div className={styles.userThumb}>
-                                 <img src='/images/user.png' alt='user'/>
-                              </div>
-                              <p className={styles.userName}>Lyod Gomez</p>
-                           </div>
-                           <div className={styles.testimonialContent}>
-                              <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure</p>
-                           </div>
-                        </div>
-                        <div className={styles.testimonialItem}>
-                           <div className={styles.testimonialUser}>
-                              <div className={styles.userThumb}>
-                                 <img src='/images/user.png' alt='user'/>
-                              </div>
-                              <p className={styles.userName}>Lyod Gomez</p>
-                           </div>
-                           <div className={styles.testimonialContent}>
-                              <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure</p>
-                           </div>
-                        </div>
-                        <div className={styles.testimonialItem}>
-                           <div className={styles.testimonialUser}>
-                              <div className={styles.userThumb}>
-                                 <img src='/images/user.png' alt='user'/>
-                              </div>
-                              <p className={styles.userName}>Lyod Gomez</p>
-                           </div>
-                           <div className={styles.testimonialContent}>
-                              <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure</p>
-                           </div>
-                        </div>
+                        })
+                     }
+                      
+                    
                      </Carousel>
                   </div>
 

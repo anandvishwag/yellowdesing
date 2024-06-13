@@ -1,10 +1,33 @@
 import React, { Fragment } from 'react'
+import Head from 'next/head';
 import MainBanner from '../components/partials/MainBanner'
 import styles from '../styles/Home.module.scss'
 import Link from 'next/link'
+import { APP_URL } from '../utils/constant';
 const Home = () => {
   return (
     <Fragment>
+       <Head>
+          <title>Home :: Yellow Wood</title>
+          <meta name="title" content="Home :: Yellow Wood"/>
+          <meta name="description" content="Home :: Yellow Wood"/>
+          <meta name="keywords" content="Home, Yellow Wood"/>
+
+           {/* OG Details */}
+           {/* <meta property="og:type" content="website"/>
+           <meta property="og:url" content={seoData.og_url}/>
+           <meta property="og:title" content={seoData.og_title}/>
+           <meta property="og:description" content={seoData.og_description}/>
+          <meta property="og:image" content={seoData.og_image} />
+
+          <meta property="twitter:card" content={seoData.twitter_card} />
+          <meta property="twitter:url" content={seoData.page_url} />
+          <meta property="twitter:title" content={seoData.twitter_title} />
+          <meta property="twitter:description" content={seoData.twitter_description}/>
+          <meta property="twitter:image" content={seoData.twitter_image} /> */}
+          <link rel="canonical" href={APP_URL} />
+        </Head>
+
       <div className={'animationBox'}>
          <div><span></span></div>
          <div><span></span></div>
@@ -86,7 +109,7 @@ const Home = () => {
         </div>
         <div className={styles.materials}>
           <div className='container'>
-            <div className='row'>
+            <div className='row align-items-center'>
               <div className='col-md-7'>
                 <div className={styles.materialContent}>
                   <h4>Your Online </h4>
