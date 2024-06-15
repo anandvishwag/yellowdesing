@@ -167,13 +167,13 @@ const Home = () => {
                     <p>Yellow Wood Construction is a new generation making dream homes at affordable & assured Quality construction. We found there is severe trust deficit with building contractor & labor contractor from customer end point. What we were always sure is this can be fixed by careful study and research, combined with technical knowledge and artistic judgment. We wil do this through a strong in house professional architects, designers, engineers, projects managers with 10 years experience in the construction industry. The entire work flow from booking, design, documentation, project execution, quality checks, payment flow & final handover.</p>
 
                     <p><strong>Quality Standards : </strong><br />
-                      Our main focus is customer satisfaction & to achieve highest quality standards we ensure the use of branded materials.</p>
+                      Our main focus is customer satisfaction & to achieve highest quality standards. We ensure to use trusted materials.</p>
 
                     <p><strong>ON Time Completion : </strong><br />
                       We provide a master schedule, monthly schedules & commit to completing project on time. To ensure clients are aware of the progress, monthly reports are consistently shared. We also follow a penalty policy in case of any delay.</p>
 
                     <p><strong>Guarantee : </strong><br />
-                      We offer  1 year complete guarantee on all works that we execute & an addition 10 year warranty on structure.</p>
+                      We offer a 1 year conditional guarantee on works executed & an additional 10 years warranty on structure.</p>
                   </div>
                 </div>
 

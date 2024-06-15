@@ -82,8 +82,8 @@ const ContactUs = () => {
                     <div className='row'>
                         <div className='col-md-6'>
                             <div className={styles.contactForm}>
-                                <h1>We'd Love To Hear From You</h1>
-                                <p>Aenean sodales mauris quis tellus facilisis, vel mattis magna. Interdum curabitur eget aliquam elit in mauris purus.</p>
+                            <h1>Get in Touch</h1>
+                             <p>We value your feedback and inquiries. Please fill out the form below, and our team will get back to you as soon as possible.</p>
                                 <Formik
                                     initialValues={{ name:'', email: '', phone:'',  message: ''}}
                                     validate={values => {
