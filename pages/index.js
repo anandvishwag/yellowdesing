@@ -70,7 +70,7 @@ const Home = () => {
               <p>10 Years of Experience/Quality Assurance / Timely Delivery of Project</p>
             </div>
             <div className={`${styles.infoItems} ${styles.infoItem2}`}>
-              <p>Customer Services <br /> ( 2D, 3D )</p>
+              <p>Building, Planning and <br /> Design Services</p>
             </div>
             <div className={`${styles.infoItems} ${styles.infoItem3}`}>
               <p>Structural Detailing <br /> Interior Design</p>
